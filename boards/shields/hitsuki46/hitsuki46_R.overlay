@@ -118,8 +118,9 @@
         // Invert Y axis only (X axis is correct without inversion)
         invert-y;
 
-        // Power management (recommended by README)
-        force-awake;
+        // Power management
+        // NOTE: force-awake was removed to fix cursor drift issue when idle
+        // The sensor will now use normal downshift mode (RUN -> REST1 -> REST2 -> REST3)
     };
 };
 
