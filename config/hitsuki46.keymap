@@ -70,10 +70,10 @@
 
         default {
             bindings = <
-&kp ESCAPE      &mt LCTRL Q       &kp W         &kp E         &kp R        &kp T             &kp Y             &kp U        &kp I                 &kp O          &kp P        &kp BACKSPACE
-&mt LCTRL TAB   &kp A             &kp S         &kp D         &kp F        &kp G             &kp H             &kp J        &kp K                 &kp L          &lt 5 MINUS  &kp EQUAL
-&kp LEFT_SHIFT  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B             &kp N             &kp M        &kp COMMA             &kp PERIOD     &kp SLASH    &kp RSHFT
-                &kp LEFT_WIN      &kp LEFT_ALT  &lt 6 DELETE  &lt 3 SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &lt 2 ENTER  &mt RSHIFT BACKSPACE  &kp SEMICOLON  &kp SQT
+&kp ESCAPE      &mt LCTRL Q       &kp W         &kp E         &kp R        &kp T             &kp Y            &kp U        &kp I                 &kp O          &kp P        &kp BACKSPACE
+&mt LCTRL TAB   &kp A             &kp S         &kp D         &kp F        &kp G             &kp H            &kp J        &kp K                 &kp L          &lt 5 MINUS  &kp EQUAL
+&kp LEFT_SHIFT  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B             &kp N            &kp M        &kp COMMA             &kp PERIOD     &kp SLASH    &lt 6 BACKSLASH
+                &kp LEFT_WIN      &kp LEFT_ALT  &lt 6 DELETE  &lt 2 SPACE  &lt 2 LANGUAGE_2  &lt 4 BACKSPACE  &lt 3 ENTER  &mt RSHIFT BACKSPACE  &kp SEMICOLON  &lt 1 SQT
             >;
         };
 
@@ -97,19 +97,19 @@
 
         NUM {
             bindings = <
-&trans  &kp N1            &kp N2             &kp N3          &kp N4           &kp N5         &kp N6  &kp N7        &kp N8        &kp N9        &kp N0      &trans
-&trans  &trans            &trans             &trans          &trans           &kp BACKSLASH  &trans  &kp N4        &kp N5        &kp N6        &kp MINUS   &kp SLASH
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS    &kp ASTERISK
-        &trans            &trans             &trans          &trans           &trans         &trans  &kp NUMBER_0  &trans        &trans        &kp PERIOD
+&trans  &kp N1            &kp N2             &kp N3          &kp N4           &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0      &trans
+&trans  &trans            &trans             &trans          &trans           &kp BACKSLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS   &kp SLASH
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &trans          &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3     &kp PLUS    &kp ASTERISK
+        &trans            &trans             &trans          &trans           &trans         &trans          &kp NUMBER_0    &trans        &trans           &kp PERIOD
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &kp UP    &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans
+        &trans  &trans    &trans    &trans     &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
 
