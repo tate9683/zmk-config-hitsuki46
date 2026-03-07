@@ -15,6 +15,35 @@
 //     // scroll-layers = <5>;
 // };
 
+
+// OS設定を日本語キーボードのまま使用するための変換定義
+
+#define JP_DQUOTE       AT                // "
+#define JP_AMPERSAND    CARET             // &
+#define JP_QUOTE        AMPERSAND         // '
+#define JP_EQUAL        UNDER             // =
+#define JP_CARET        EQUAL             // ^
+#define JP_YEN          0x89              // ¥
+#define JP_PLUS         COLON             // +
+#define JP_TILDE        PLUS              // ~
+#define JP_PIPE         LS(0x89)          // |
+#define JP_AT           LEFT_BRACKET      // @
+#define JP_COLON        SINGLE_QUOTE      // :
+#define JP_ASTERISK     DOUBLE_QUOTES     // *
+#define JP_BACKQUOTE    LEFT_BRACE        // `
+#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_LBRACKET     RIGHT_BRACKET     // [
+#define JP_RBRACKET     BACKSLASH         // ]
+#define JP_LPAREN       ASTERISK          // (
+#define JP_RPAREN       LEFT_PARENTHESIS  // )
+#define JP_LBRACE       RIGHT_BRACE       // {
+#define JP_RBRACE       PIPE              // }
+#define JP_KANA         LANGUAGE_1        // かな
+#define JP_EISU         LANGUAGE_2        // 英数
+#define JP_HANZEN       GRAVE             // 半角/全角
+
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -88,7 +117,7 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET       &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp EXCLAMATION  &kp JP_AT    &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET       &kp AMPERSAND   &kp ASTERISK     &kp JP_LPAREN         &kp JP_RPAREN          &trans
 &trans  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5       &kp BACKSPACE   &kp UP          &trans           &trans                &trans                 &trans
 &trans  &kp F6           &kp F7       &kp F8    &kp F9      &kp F10      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                &trans                 &trans
         &kp LANGUAGE_1   &kp F12      &trans    &trans      &trans       &trans          &trans          &trans           &trans                &trans
