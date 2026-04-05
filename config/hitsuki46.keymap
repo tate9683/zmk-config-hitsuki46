@@ -14,8 +14,6 @@
 //     // automouse-layer = <1>;
 //     // scroll-layers = <5>;
 // };
-
-
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_DQUOTE       AT                // "
@@ -41,8 +39,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
-
 
 / {
     combos {
@@ -108,19 +104,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans    &trans    &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans    &trans    &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans              &mkp MB1             &mkp MB3  &mkp MB2  &kp MINUS  &kp JP_UNDERSCORE
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans    &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans    &trans     &trans
         &trans  &trans  &trans  &trans  &trans  &kp LANGUAGE_1      &kp LANGUAGE_2       &trans    &trans    &trans
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans  &kp EXCLAMATION  &kp JP_AT    &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET       &kp AMPERSAND   &kp ASTERISK     &kp JP_LPAREN         &kp JP_RPAREN          &trans
-&trans  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5       &kp BACKSPACE   &kp UP          &trans           &trans                &kp JP_UNDERSCORE      &trans
-&trans  &kp F6           &kp F7       &kp F8    &kp F9      &kp F10      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                &trans                 &trans
-        &kp LANGUAGE_1   &kp F12      &trans    &trans      &trans       &trans          &trans          &trans           &trans                &trans
+&trans  &kp EXCLAMATION  &kp JP_AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp JP_LPAREN  &kp JP_RPAREN      &trans
+&trans  &kp F1           &kp F2     &kp F3    &kp F4      &kp F5       &kp BACKSPACE  &trans         &trans        &trans         &kp JP_UNDERSCORE  &trans
+&trans  &kp F6           &kp F7     &kp F8    &kp F9      &kp F10      &trans         &trans         &trans        &trans         &trans             &trans
+        &kp LANGUAGE_1   &kp F12    &trans    &trans      &trans       &trans         &trans         &trans        &trans         &trans
             >;
         };
 
